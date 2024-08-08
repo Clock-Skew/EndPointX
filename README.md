@@ -4,13 +4,13 @@
 
 ------------
 
-**Built for Debian | Tested on Kali 24.2  | 6.8.11-1kali2**
+**Built for Debian | Tested on Kali 24.2 | 6.8.11**
 
 ------------
 
 [![](https://1.4142135.xyz/a.png)](https://1.4142135.xyz/a.png)
 
-~~EndpointX~~  is a tool designed to automate the process of decompiling APKs and extracting endpoints such as **URLs**, **URIs**, **IP addresses**, **Binders**, and more. This tool helps with **analyzing the attack surface** of APK files by ** identifying potential footholds via endpoints.** 
+~~EndpointX~~  is a tool designed to automate the process of decompiling APKs and extracting endpoints such as **URLs**, **URIs**, **IP addresses**, **Binders**, and more. This tool helps with **analyzing the attack surface** of APK files by **identifying potential footholds via endpoints.** 
 
 Inspired by | **[n0mi1k/apk2url](https://github.com/n0mi1k/apk2url "n0mi1k/apk2url")**
 
@@ -51,7 +51,7 @@ The program uses the following tools:
  - Extract Mappings between original class / member names & their obfuscated equivalents.
 
 
-##Example Output
+## Example Output
 
 
 ### Endpoints
@@ -97,7 +97,6 @@ Ensure that Java is installed on your system. If not, please install Java before
 
 ```
 git clone https://github.com/clock-skew/EndPointX && cd EndPointX
-
 ```
 
 You can install the necessary tools using ```apt``` on debian or by using the install script below: 
@@ -138,15 +137,19 @@ sudo ./decompile.sh    /path/to/your.apk
 
 Most apk files will fully decompile and the endpoints will be in the ```output``` directory along with the Jadx job file, howerver if the jobf is not in output, it will be in the ```apk``` directory. If the apk fails to decompile it may leave behind partial output files, and/or error logs, so be sure to check for additional files/dirs after the operation is complete.
 
-#### **Credits**
+### **Credits**
 
 ------------
 
 
  **[n0mi1k](https://github.com/n0mi1k/apk2url "n0mi1k/apk2url")**
+ 
 **[0xkol](https://github.com/0xkol "0xkol")**
+
+
+------------
 
 
 #### License
 
-This project is licensed under the [MIT License.](https://choosealicense.com/licenses/mit/ "MIT License")
+This project is distributed under the [MIT License.](https://choosealicense.com/licenses/mit/ "MIT License")
