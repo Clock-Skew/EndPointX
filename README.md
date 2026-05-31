@@ -5,8 +5,7 @@
 [![Privacy: Local Only](https://img.shields.io/badge/Privacy-Local_Only-16a34a?style=for-the-badge)](PRIVACY.md)
 [![No Telemetry](https://img.shields.io/badge/Telemetry-None-111827?style=for-the-badge)](PRIVACY.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-f59e0b?style=for-the-badge)](LICENSE)
-[![Static Verify](https://img.shields.io/badge/Static_Verify-Passing-22c55e?style=for-the-badge)](scripts/verify_extension.py)
-[![GitHub Release](https://img.shields.io/github/v/release/Clock-Skew/EndPointX?style=for-the-badge&logo=github)](https://github.com/Clock-Skew/EndPointX/releases)
+
 
 ![EndPointX](a.png)
 
