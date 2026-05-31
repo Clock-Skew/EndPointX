@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">EndPointX</title>
+  <rect width="48" height="48" rx="9" fill="#111722"/>
+  <path d="M10 14h12l5 7h11" fill="none" stroke="#54d6b5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M10 34h12l5-7h11" fill="none" stroke="#7ea7ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="10" cy="14" r="4" fill="#54d6b5"/>
+  <circle cx="10" cy="34" r="4" fill="#7ea7ff"/>
+  <circle cx="38" cy="21" r="4" fill="#f3f7fb"/>
+  <circle cx="38" cy="27" r="4" fill="#f3f7fb"/>
+</svg>

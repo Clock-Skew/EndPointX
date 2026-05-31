@@ -1,0 +1,24 @@
+{
+  "name": "endpointx",
+  "version": "0.1.0",
+  "description": "EndPointX is a Firefox-first local-only endpoint collection tool for authorized security review.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "verify": "python3 scripts/verify_extension.py",
+    "lint": "npx --yes web-ext lint --source-dir . --warnings-as-errors --ignore-files scripts/verify_extension.py package.json package-lock.json README.md PRIVACY.md SECURITY.md CONTRIBUTING.md",
+    "start": "npx --yes web-ext run --source-dir .",
+    "build": "npx --yes web-ext build --source-dir . --overwrite-dest --ignore-files scripts/verify_extension.py package.json package-lock.json README.md PRIVACY.md SECURITY.md CONTRIBUTING.md"
+  },
+  "keywords": [
+    "firefox-extension",
+    "webextension",
+    "security-testing",
+    "endpoint-discovery",
+    "defensive-security",
+    "bug-bounty",
+    "local-only"
+  ],
+  "license": "MIT",
+  "devDependencies": {}
+}

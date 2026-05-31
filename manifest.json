@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "EndPointX",
+  "version": "0.1.0",
+  "description": "EndPointX is a local-only endpoint collection tool for authorized security review. It collects active-tab URLs, forms, resources, and safe timing metadata on demand.",
+  "icons": {
+    "48": "icons/endpoint-48.svg",
+    "96": "icons/endpoint-96.svg"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_title": "Collect EndPointX endpoints from this tab",
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "48": "icons/endpoint-48.svg",
+      "96": "icons/endpoint-96.svg"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "endpointx@clock-skew.local",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
+    }
+  }
+}

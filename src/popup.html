@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EndPointX</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="mark" aria-hidden="true"></div>
+      <div>
+        <h1>EndPointX</h1>
+        <p>Local active-tab endpoint map</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="notice" aria-label="Security boundary">
+        Authorized targets only. Query values are redacted. No request bodies,
+        cookies, credentials, telemetry, or remote upload.
+      </section>
+
+      <div class="actions">
+        <button id="collectButton" class="primary" type="button">Collect Current Tab</button>
+        <button id="copyButton" type="button" disabled>Copy URLs</button>
+        <button id="exportButton" type="button" disabled>Export JSON</button>
+      </div>
+
+      <section class="summary" aria-live="polite">
+        <div>
+          <span id="endpointCount">0</span>
+          <small>endpoints</small>
+        </div>
+        <div>
+          <span id="sameOriginCount">0</span>
+          <small>same origin</small>
+        </div>
+        <div>
+          <span id="crossOriginCount">0</span>
+          <small>cross origin</small>
+        </div>
+      </section>
+
+      <label class="filter-label" for="filterInput">Filter endpoints</label>
+      <input id="filterInput" type="search" placeholder="api, graphql, cdn, /v1">
+
+      <section id="status" class="status">Ready.</section>
+      <ol id="endpointList" class="endpoint-list" aria-label="Collected endpoints"></ol>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
